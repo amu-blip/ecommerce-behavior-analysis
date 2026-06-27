@@ -1,4 +1,21 @@
 # 多月电商用户行为分析与购买转化预测
+## Project Highlights
+
+* Processed **410M+** e-commerce user behavior events across **7 months** using DuckDB and Parquet.
+* Built a scalable data pipeline from raw CSV files to monthly and daily Parquet partitions.
+* Designed leakage-safe session-level features by using only pre-purchase `view/cart` behavior and historical user behavior before the target month.
+* Trained and compared has-cart rule baseline, Logistic Regression, and multiple LightGBM ablation models.
+* Final LightGBM full model achieved **ROC-AUC 0.9718**, **PR-AUC 0.6342**, and **F1-score 0.6424** on the 2020-04 test set.
+* Top 10% high-score sessions reached **54.03% purchase rate**, **7.97x Lift**, and captured **79.72%** of all real purchase sessions.
+
+## 项目亮点
+
+* 使用 DuckDB 和 Parquet 处理 **7 个月、4.11 亿+** 条电商用户行为日志。
+* 构建从原始 CSV 到按月份 / 日期分区 Parquet 的大规模数据处理流程。
+* 设计防泄漏 session 级特征：购买 session 仅使用首次购买前的 `view/cart` 行为，用户历史特征仅使用目标月份之前的数据。
+* 对比 has-cart 规则 baseline、Logistic Regression 和多组 LightGBM ablation 模型。
+* 最终 LightGBM full model 在 2020-04 测试集取得 **ROC-AUC 0.9718**、**PR-AUC 0.6342**、**F1-score 0.6424**。
+* 模型预测概率最高的前 10% session 购买率达到 **54.03%**，Lift 为 **7.97 倍**，覆盖 **79.72%** 的真实购买 session。
 
 ## 1. 项目概述
 
