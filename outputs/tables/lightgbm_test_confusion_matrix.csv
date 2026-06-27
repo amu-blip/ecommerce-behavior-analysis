@@ -1,0 +1,5 @@
+﻿metric,threshold_0_5,best_f1_threshold
+TN_true_no_purchase,312899,310466
+FP_false_purchase,11785,14218
+FN_missed_purchase,7082,5707
+TP_true_purchase,16524,17899

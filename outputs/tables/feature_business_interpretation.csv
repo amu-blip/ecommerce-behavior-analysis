@@ -1,0 +1,38 @@
+﻿feature,feature_group,feature_group_cn,importance_gain,importance_ratio,business_interpretation
+cart_count,session_cart_behavior,当前 session 加购行为,18838137.34313965,0.7896448939646521,当前 session 中首次购买前的加购次数。加购次数越多，购买意向通常越强。
+has_cart,session_cart_behavior,当前 session 加购行为,1670103.0,0.07000630064019123,当前 session 是否发生过加购。它是区分购买意向的重要行为信号。
+user_hist_active_month_count,user_history_activity,用户历史活跃特征,692949.0591125488,0.02904659183330054,用户历史活跃月份数，反映用户长期活跃稳定性。
+user_hist_active_day_count,user_history_activity,用户历史活跃特征,574403.4937286377,0.02407747526394672,用户历史活跃天数，反映用户持续活跃程度。
+avg_cart_price,session_price,当前 session 价格特征,395031.3900146484,0.016558671082968,加购商品平均价格，反映购物车商品价值水平。
+session_duration_seconds,session_time,当前 session 时间特征,308346.1133422852,0.01292505355171178,当前 session 持续时间，反映用户比较和决策时间。
+events_per_product,session_browse_behavior,当前 session 浏览/探索行为,279107.1089019775,0.01169943181744266,平均每个商品对应的浏览/加购事件数，反映用户对单个商品的关注深度。
+user_hist_purchase_count,user_history_purchase,用户历史购买特征,195070.7122192383,0.008176848329543877,用户历史购买次数，反映过去购买经验。
+user_hist_total_spend,user_history_purchase,用户历史购买特征,171768.3158874512,0.007200073505931216,用户历史消费金额，反映用户价值。
+user_hist_purchase_cart_ratio,user_history_purchase,用户历史购买特征,125666.5314178467,0.005267608631831576,用户历史购买/加购比例，反映历史加购后成交倾向。
+avg_view_price,session_price,当前 session 价格特征,83267.56159973145,0.00349035595464857,浏览商品的平均价格，反映用户关注的价格水平。
+max_view_price,session_price,当前 session 价格特征,71031.72671508789,0.002977462117850423,浏览商品最高价格，反映用户接触到的价格上限。
+start_hour,session_time,当前 session 时间特征,57511.08996582031,0.00241071278495536,session 开始小时，反映一天内的访问时段差异。
+unique_main_category_count,session_browse_behavior,当前 session 浏览/探索行为,54703.23085021973,0.002293014757107954,当前 session 涉及的主品类数量，反映用户需求是否集中。
+view_count,session_browse_behavior,当前 session 浏览/探索行为,50122.53880310059,0.002101004261593153,当前 session 首次购买前的浏览次数，反映用户探索深度。
+cart_view_ratio,session_cart_behavior,当前 session 加购行为,47347.78240966797,0.001984693812308327,加购次数与浏览次数的比例，反映浏览向加购转化的强度。
+view_price_range,session_price,当前 session 价格特征,38333.65289306641,0.001606845343711581,浏览商品价格跨度，反映价格比较范围。
+unique_category_count,session_browse_behavior,当前 session 浏览/探索行为,33197.96691894531,0.001391570970635229,当前 session 涉及的不同品类数量，反映跨品类探索程度。
+user_hist_view_count,user_history_activity,用户历史活跃特征,33145.68588256836,0.001389379487864175,用户历史浏览次数，反映长期活跃程度。
+min_view_price,session_price,当前 session 价格特征,27299.68998718262,0.001144330801529441,浏览商品最低价格，反映用户接触到的价格下限。
+cart_to_view_price_ratio,session_price,当前 session 价格特征,19154.75622558594,0.0008029167201172285,加购商品均价与浏览商品均价的比例，反映用户最终加购商品价格相对浏览价格的变化。
+user_hist_cart_view_ratio,user_history_activity,用户历史活跃特征,18845.1590423584,0.00078993922502478,用户历史加购/浏览比例，反映历史行为转化倾向。
+user_hist_view_product_count,user_history_activity,用户历史活跃特征,18513.08728027344,0.000776019655027817,用户历史浏览过的不同商品数，反映长期兴趣范围。
+user_hist_cart_count,user_history_activity,用户历史活跃特征,13834.17207336426,0.0005798919044370771,用户历史加购次数，反映过去的购买意向行为。
+start_weekday_num,session_time,当前 session 时间特征,13496.07197570801,0.0005657196425568209,session 开始星期，反映周内行为差异。
+user_hist_purchase_product_count,user_history_purchase,用户历史购买特征,9078.924118041992,0.0003805644869191485,用户历史购买过的不同商品数，反映过去购买品类/商品丰富度。
+unique_product_count,session_browse_behavior,当前 session 浏览/探索行为,7936.480010986328,0.0003326762515090249,当前 session 浏览或加购的不同商品数量，反映用户比较商品的范围。
+user_hist_cart_product_count,user_history_activity,用户历史活跃特征,3874.401000976562,0.0001624046428723396,用户历史加购过的不同商品数，反映过去加购兴趣范围。
+pre_purchase_event_count,session_browse_behavior,当前 session 浏览/探索行为,2974.497985839844,0.0001246830885582191,首次购买前的浏览和加购行为总数，反映购买前的行为深度。
+cart_total_price,session_price,当前 session 价格特征,931.4650268554688,3.904455036956867e-05,当前 session 加购商品总金额，反映购物车价值。
+user_hist_avg_spend_per_purchase,user_history_purchase,用户历史购买特征,747.458984375,3.133150373142749e-05,用户历史单次购买平均消费金额，反映历史客单价。
+unique_brand_count,session_browse_behavior,当前 session 浏览/探索行为,536.5179901123047,2.248941515264217e-05,当前 session 涉及的品牌数量，反映品牌比较行为。
+cart_price_range,session_price,当前 session 价格特征,0.0,0.0,加购商品价格跨度，反映购物车商品价格差异。
+min_cart_price,session_price,当前 session 价格特征,0.0,0.0,加购商品最低价格，反映购物车价格下限。
+max_cart_price,session_price,当前 session 价格特征,0.0,0.0,加购商品最高价格，反映购物车中的高价商品信号。
+user_hist_purchase_month_count,user_history_purchase,用户历史购买特征,0.0,0.0,用户历史发生购买的月份数，反映复购稳定性。
+user_is_old_customer,user_history_purchase,用户历史购买特征,0.0,0.0,用户历史是否购买过，反映是否为老购买用户。

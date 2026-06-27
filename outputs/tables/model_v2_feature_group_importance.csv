@@ -1,0 +1,7 @@
+﻿feature_group,feature_group_cn,importance_gain,feature_count,importance_ratio
+session_cart_behavior,当前 session 加购行为,20555588.125549316,3,0.8616358884171517
+user_history_activity,用户历史活跃特征,1355565.0581207275,7,0.05682170201247345
+session_price,当前 session 价格特征,635050.2424621582,10,0.026619626571194818
+user_history_purchase,用户历史购买特征,502331.9426269532,7,0.021056426457957248
+session_browse_behavior,当前 session 浏览/探索行为,428578.3414611816,7,0.017964870561998875
+session_time,当前 session 时间特征,379353.27528381353,3,0.01590148597922396

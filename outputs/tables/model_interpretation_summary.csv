@@ -1,0 +1,11 @@
+﻿module,item,result,interpretation
+模型任务,预测目标,预测一个 session 是否会产生购买行为,将电商行为日志转化为 session 级二分类问题。
+时间切分,训练 / 验证 / 测试,2019_10~2020_02 训练，2020_03 验证，2020_04 测试,采用时间切分方式，更接近真实业务中用历史数据预测未来月份。
+建模数据,特征工程,使用 37 个防泄漏 session 行为特征、价格特征、时间特征和用户历史特征,购买 session 只使用首次 purchase 之前的 view/cart 构造特征，降低 session 内时间泄漏风险。
+最终模型,模型选择,LightGBM full model,在行为特征基础上加入用户历史特征后，整体 ROC-AUC、PR-AUC 和 Top 10% Lift 均表现最好。
+最终模型,测试集 ROC-AUC / PR-AUC,"ROC-AUC=0.9718, PR-AUC=0.6342",模型在类别不平衡场景下仍具备较强的排序和正类识别能力。
+最终模型,测试集 Precision / Recall / F1,"Precision=0.5573, Recall=0.7582, F1=0.6424",模型能召回多数真实购买 session，同时相比规则模型明显降低误报。
+Lift 分析,Top 10% session,"购买率=54.03%, Lift=7.97, 捕获真实购买=79.72%",模型更适合作为营销资源排序工具，而不是简单的买/不买硬分类器。
+模型对比,相对 has_cart 规则 baseline,"Baseline Top10 Lift=6.36, Full Model Top10 Lift=7.97",LightGBM full model 在简单加购规则基础上进一步提升了高价值 session 排序能力。
+Ablation Study,用户历史特征贡献,"Behavior-only PR-AUC=0.6133, Full PR-AUC=0.6342",加入用户历史特征后，模型对购买样本的识别能力进一步增强。
+特征解释,最重要特征,cart_count,加购次数是购买预测中最核心的信号。

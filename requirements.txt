@@ -1,0 +1,9 @@
+duckdb
+pandas
+numpy
+matplotlib
+scikit-learn
+lightgbm
+joblib
+openpyxl
+pyarrow
